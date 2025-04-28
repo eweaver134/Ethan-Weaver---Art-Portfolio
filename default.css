@@ -1,0 +1,86 @@
+*{
+    padding:0px;
+    margin:0px;
+
+    color: white;
+}
+
+/* Background Gradient */
+.bg{
+    background-image: linear-gradient(to bottom right, rgb(31, 14, 128), rgb(72, 18, 94));
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:100%;
+}
+
+
+/* Overall Grid Structure */
+.overall_grid{
+    display:grid;
+    grid-template-columns: 1fr;
+
+    background-color: blue;
+}
+.main_card{
+    padding:1.5rem;
+    text-align:center;
+}
+
+/* Navigation */
+.nav_grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.nav_card{
+    font-size: 1.3rem;
+    
+}
+.nav_card a{
+    border: 5px solid rgb(131, 19, 125);
+    border-radius:15px;
+
+    background-color: rgb(131, 19, 125);
+    padding: 0.5rem;
+
+    text-decoration: none;
+}
+.nav_card a:hover{
+    background-color: rgb(167, 26, 159);
+}
+
+/* Introduction */
+.intro{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.intro_title{
+    grid-column: 1 / 5
+}
+.intro_card p{
+    font-size: 1.3rem;
+    padding-top:1rem;
+}
+
+
+/* Project List */
+.project_list{
+    display:grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr
+}
+.project_card{
+    margin:2rem;
+    background-color:rgb(36, 87, 255, 0.1);
+}
+.project_card img{
+    height: 15rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+.invisible{
+    background:none;
+}
+
+/* Footer */
+
+
