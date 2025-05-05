@@ -53,11 +53,38 @@
 }
 
 /* Responsive Navigation */
-.responsive_nav_grid{
+.topnav{
+    overflow:hidden;
+    background-color:rgb(107, 23, 140, 0.3);
+    position:relative;
     display:none;
 }
-    /* Hamburger animations */
-    
+.topnav #myLinks{
+    display:none;
+}
+.topnav a{
+    color:white;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+.topnav a.icon{
+    background: rgb(107, 23, 140, 0.3);
+    display:block;
+    position:absolute;
+    right:0;
+    top:0;
+}
+.topnav a:hover{
+    background-color:rgb(167, 26, 159);
+    color:white;
+}
+
+.active{
+    background-color:rgb(107, 23, 140, 0.3);
+    color:white;
+}
 
 /* Introduction */
 .intro{
@@ -109,11 +136,37 @@
 /* Footer */
 /* So far no code necessary */
 
+/* Project Pages */
+.video_section video{
+    width:60%;
+    border-radius: 2rem;
+}
+.video_section h2{
+    padding:1rem;
+}
+.screenshots{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+.screenshot_title{
+    grid-column: 1 / 4;
+    padding:1rem;
+}
+.screenshot_card img{
+    width:100%;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+
 /* Responsive Design */
 @media screen and (max-width:768px){
     /* Navigation */
     .nav_grid{
         display:none;
+    }
+    .topnav{
+        display:block;
     }
 
     /* Introduction */
@@ -131,10 +184,29 @@
     .project_card{
         width:80%;
         transition:height 2s;
+        margin-bottom:1rem;
+        margin-top:1rem;
+        margin-left:0;
+        margin-right:0;
+    }
+    .project_card img{
+        height:65%;
     }
     .project_card:hover{
         width:80%;
         height:22rem;
+    }
+
+    /* Project Pages */
+    .video_section video{
+        width: 90%;
+    }
+
+    .screenshots{
+        grid-template-columns: 1fr;
+    }
+    .screenshot_title{
+        grid-column: 1 / -1;
     }
 }
 
