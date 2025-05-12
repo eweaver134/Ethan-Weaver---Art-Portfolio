@@ -5,6 +5,10 @@
     color: white;
 }
 
+html {
+    min-height:100%;
+}
+
 /* Background Gradient */
 .bg{
     background-image: linear-gradient(to bottom right, rgb(31, 14, 128), rgb(72, 18, 94));
@@ -153,10 +157,15 @@
     grid-column: 1 / 4;
     padding:1rem;
 }
+
+.screenshot_card{
+    height:100%;
+}
 .screenshot_card img{
     width:100%;
     padding-top:1rem;
     padding-bottom:1rem;
+    vertical-align: middle;
 }
 
 /* Responsive Design */
